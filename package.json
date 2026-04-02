@@ -1,0 +1,21 @@
+{
+  "name": "autodemo",
+  "version": "1.1.0",
+  "description": "Deployable demo-planning web app",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "docker:build": "docker build -t autodemo ."
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "vitest": "^3.2.4"
+  }
+}

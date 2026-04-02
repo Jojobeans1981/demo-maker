@@ -1,0 +1,76 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-04-02T16:48:57.152Z",
+    "component": {
+      "type": "application",
+      "name": "demo-maker",
+      "version": "0.0.1"
+    },
+    "tools": [
+      {
+        "vendor": "Gauntlet Forge",
+        "name": "sbom-scanner",
+        "version": "1.0.0"
+      }
+    ]
+  },
+  "components": [
+    {
+      "type": "library",
+      "name": "express",
+      "version": "4.17.1",
+      "purl": "pkg:npm/express@4.17.1",
+      "scope": "required"
+    },
+    {
+      "type": "library",
+      "name": "ffmpeg",
+      "version": "0.9.4",
+      "purl": "pkg:npm/ffmpeg@0.9.4",
+      "scope": "required"
+    },
+    {
+      "type": "library",
+      "name": "fluent-ffmpeg",
+      "version": "latest",
+      "purl": "pkg:npm/fluent-ffmpeg@latest",
+      "scope": "required"
+    },
+    {
+      "type": "library",
+      "name": "puppeteer",
+      "version": "10.4.0",
+      "purl": "pkg:npm/puppeteer@10.4.0",
+      "scope": "required"
+    },
+    {
+      "type": "library",
+      "name": "gh-pages",
+      "version": "3.2.3",
+      "purl": "pkg:npm/gh-pages@3.2.3",
+      "scope": "dev"
+    }
+  ],
+  "vulnerabilities": [
+    {
+      "id": "FORGE-express-medium",
+      "source": {
+        "name": "Gauntlet Forge SBOM Scanner"
+      },
+      "ratings": [
+        {
+          "severity": "medium"
+        }
+      ],
+      "description": "Open redirect vulnerability",
+      "affects": [
+        {
+          "ref": "express"
+        }
+      ]
+    }
+  ]
+}
