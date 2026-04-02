@@ -52,11 +52,16 @@ Returns a generated storyboard response and a bundled sample video URL.
 
 This repo includes `render.yaml` for Blueprint deployment.
 
+One-click Blueprint link:
+
+`https://render.com/deploy?repo=https://github.com/Jojobeans1981/demo-maker`
+
 Manual settings if needed:
 
 - Runtime: `Node`
 - Build command: `npm install`
 - Start command: `npm start`
+- Health check path: `/api/health`
 
 ### Docker
 
